@@ -5,11 +5,12 @@ def describe_string(input_string: str) -> dict:
     normalized_string = input_string.lower()
 
     length = len(input_string)
-    is_palindrome = (normalized_string == normalized_string[::-1])
-    unique_characters = len(set(input_string.replace(" ", "")))
+    is_palindrome = (normalized_string.lower() == normalized_string.lower()[::-1])
+    # is_palindrome = (normalized_string == normalized_string[::-1])
+    unique_characters = len(set(input_string.lower().replace(" ", "")))
     word_count = len(input_string.split())
-    char_frequency_map = generate_character_freq_map(input_string)
-    sha256_hash = hash_string(input_string)
+    char_frequency_map = generate_character_freq_map(input_string.lower())
+    sha256_hash = hash_string(input_string.lower())
 
     return {
         "length": length,

@@ -18,4 +18,6 @@ class AnalyzedStringFilter(django_filters.FilterSet):
     class Meta:
         model = AnalyzedString
         # You can also list fields for simple exact lookups
-        fields = ['is_palindrome', "max_length", "min_length", "word_count", "contains_character"]
+        fields = ['is_palindrome', "min_length", "max_length", "word_count", "contains_character"]
+
+        

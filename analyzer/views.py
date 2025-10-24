@@ -28,7 +28,7 @@ class StringAnalyzerViewSet(viewsets.ModelViewSet):
         try:
             serializer.is_valid(raise_exception=True)
         except ValidationError as e:
-            if 'value' in e.detail and 'Not a valid string' in e.detail['value'][0]:
+            if 'value' in e.detail:# and 'Not a valid string' in e.detail['value'][0]:
                 return Response(
                     {"value": ["'value' (must be string) "]},
                     status=status.HTTP_422_UNPROCESSABLE_ENTITY
@@ -81,11 +81,12 @@ class StringAnalyzerViewSet(viewsets.ModelViewSet):
         if bool(is_palindrome):
             response_data['filters_applied']["is_palindrome"] = bool(is_palindrome)
 
+        if min_length:
+            response_data['filters_applied']["min_length"] = int(min_length)
+
         if max_length:
             response_data['filters_applied']["max_length"] = int(max_length)
 
-        if min_length:
-            response_data['filters_applied']["min_length"] = int(min_length)
 
         if word_count:
             response_data['filters_applied']["word_count"] = int(word_count)
@@ -94,6 +95,24 @@ class StringAnalyzerViewSet(viewsets.ModelViewSet):
             response_data['filters_applied']["contains_character"] = contains_character
 
         return Response(response_data, status=status.HTTP_200_OK)
+
+    def destroy(self, request, *args, **kwargs):
+        """Custom delete method to remove a string by its 'value' field"""
+        lookup_value = kwargs.get(self.lookup_field)
+
+        try:
+            instance = self.get_queryset().get(value=lookup_value)
+        except AnalyzedString.DoesNotExist:
+            return Response(
+                {"error": f"String '{lookup_value}' not found."},
+                status=status.HTTP_404_NOT_FOUND
+            )
+
+        # Perform the deletion
+        instance.delete()
+        return Response(
+            status=status.HTTP_204_NO_CONTENT
+        )
 
     @action(detail=False, methods=['get'], url_path='filter-by-natural-language')
     def natural_language_filter(self, request):

@@ -3,15 +3,27 @@ from .models import AnalyzedString
 from .utils import describe_string, hash_string
 
 
+class StrictCharField(serializers.CharField):
+    def to_internal_value(self, data):
+        # 'data' is the raw value coming from the JSON parser (int, bool, etc.)
+        if not isinstance(data, str):
+            raise serializers.ValidationError("Not a valid string. Value must be a JSON string (in quotes).")
+        return super().to_internal_value(data)
+    
 class StringSerializer(serializers.ModelSerializer):
 
     id = serializers.CharField(read_only=True)
-    value = serializers.CharField(required=True)
+    value = StrictCharField(required=True)
     length = serializers.IntegerField(read_only=True)
     is_palindrome = serializers.BooleanField(read_only=True)
     unique_characters = serializers.IntegerField(read_only=True)
     word_count = serializers.IntegerField(read_only=True)
     character_frequency_map = serializers.JSONField(read_only=True)
+
+    def validate_value(self, value):
+        if not isinstance(value, str):
+            raise serializers.ValidationError("Not a valid string.")
+        return value
 
 
     class Meta:
@@ -59,3 +71,5 @@ class StringSerializer(serializers.ModelSerializer):
         representation['created_at'] = representation.pop('created_at')
 
         return representation
+
+
