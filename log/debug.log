@@ -1,0 +1,6 @@
+[2025-10-24 18:51:51,342] INFO in autoreload: Watching for file changes with StatReloader
+[2025-10-24 18:52:48,934] INFO in autoreload: Watching for file changes with StatReloader
+[2025-10-24 18:53:30,733] INFO in autoreload: Watching for file changes with StatReloader
+[2025-10-24 18:54:10,598] INFO in autoreload: Watching for file changes with StatReloader
+[2025-10-24 18:54:47,537] INFO in autoreload: /home/edsu-dev/Documents/dev/HNG/string_analyzer/string_analyzer/settings.py changed, reloading.
+[2025-10-24 18:54:48,205] INFO in autoreload: Watching for file changes with StatReloader
