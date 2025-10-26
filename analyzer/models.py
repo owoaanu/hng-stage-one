@@ -11,3 +11,16 @@ class AnalyzedString(models.Model):
     word_count = models.IntegerField()
     character_frequency_map = models.JSONField()
     created_at = models.DateTimeField(auto_now_add=True)
+
+class StringAnalysis(models.Model):
+    id = models.CharField(max_length=64, primary_key=True)  # SHA-256 hash
+    value = models.TextField(unique=True)
+    properties = models.JSONField()
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        db_table = 'string_analyses'
+        ordering = ['-created_at']
+
+    def __str__(self):
+        return f"{self.value[:50]}..."

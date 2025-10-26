@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import AnalyzedString
+from .models import AnalyzedString, StringAnalysis
 from .utils import describe_string, hash_string
 
 
@@ -72,4 +72,36 @@ class StringSerializer(serializers.ModelSerializer):
 
         return representation
 
+class StringAnalysisSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = StringAnalysis
+        fields = ['id', 'value', 'properties', 'created_at']
+        read_only_fields = ['id', 'properties', 'created_at']
 
+class StringCreateSerializer(serializers.Serializer):
+    value = serializers.CharField(required=True, max_length=10000)
+
+    def validate_value(self, value):
+        if not isinstance(value, str):
+            raise serializers.ValidationError("Value must be a string")
+        if not value.strip():
+            raise serializers.ValidationError("Value cannot be empty")
+        return value
+
+class StringListResponseSerializer(serializers.Serializer):
+    data = StringAnalysisSerializer(many=True)
+    count = serializers.IntegerField()
+    filters_applied = serializers.DictField(required=False)
+
+class NaturalLanguageFilterSerializer(serializers.Serializer):
+    query = serializers.CharField(required=True, max_length=500)
+
+    def validate_query(self, value):
+        if not value.strip():
+            raise serializers.ValidationError("Query cannot be empty")
+        return value
+
+class NaturalLanguageResponseSerializer(serializers.Serializer):
+    data = StringAnalysisSerializer(many=True)
+    count = serializers.IntegerField()
+    interpreted_query = serializers.DictField()

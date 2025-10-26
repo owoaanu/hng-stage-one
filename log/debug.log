@@ -125,3 +125,75 @@
 [2025-10-24 21:03:30,276] INFO in autoreload: Watching for file changes with StatReloader
 [2025-10-24 21:03:49,158] INFO in autoreload: /home/edsu-dev/Documents/dev/HNG/string_analyzer/analyzer/views.py changed, reloading.
 [2025-10-24 21:03:49,985] INFO in autoreload: Watching for file changes with StatReloader
+[2025-10-24 21:05:29,355] INFO in autoreload: Watching for file changes with StatReloader
+[2025-10-25 16:05:30,841] INFO in autoreload: Watching for file changes with StatReloader
+[2025-10-25 16:05:48,611] INFO in autoreload: Watching for file changes with StatReloader
+[2025-10-25 16:14:12,224] INFO in autoreload: /home/edsu-dev/Documents/dev/HNG/string_analyzer/string_analyzer/settings.py changed, reloading.
+[2025-10-25 16:30:05,768] INFO in autoreload: Watching for file changes with StatReloader
+[2025-10-25 16:30:27,562] WARNING in log: Method Not Allowed: /strings/madam
+[2025-10-25 16:31:46,260] WARNING in log: Not Found: /strings/madam/
+[2025-10-25 16:31:49,953] WARNING in log: Method Not Allowed: /strings/madam
+[2025-10-25 16:31:55,451] WARNING in log: Not Found: /strings/
+[2025-10-25 16:32:23,318] WARNING in log: Method Not Allowed: /strings/m
+[2025-10-25 16:32:44,891] WARNING in log: Not Found: /strings/consented
+[2025-10-25 16:33:18,738] WARNING in log: Method Not Allowed: /strings
+[2025-10-25 16:33:24,458] WARNING in log: Method Not Allowed: /strings
+[2025-10-25 16:33:47,342] WARNING in log: Not Found: /strings/
+[2025-10-25 16:33:49,200] WARNING in log: Method Not Allowed: /strings
+[2025-10-25 16:34:42,455] INFO in autoreload: /home/edsu-dev/Documents/dev/HNG/string_analyzer/analyzer/urls.py changed, reloading.
+[2025-10-25 16:34:43,010] INFO in autoreload: Watching for file changes with StatReloader
+[2025-10-25 16:34:46,712] WARNING in log: Method Not Allowed: /strings
+[2025-10-25 16:34:47,622] WARNING in log: Method Not Allowed: /strings
+[2025-10-25 16:34:48,594] WARNING in log: Method Not Allowed: /strings
+[2025-10-25 16:35:10,176] WARNING in log: Method Not Allowed: /strings
+[2025-10-25 16:37:37,162] INFO in autoreload: /home/edsu-dev/Documents/dev/HNG/string_analyzer/analyzer/urls.py changed, reloading.
+[2025-10-25 16:37:37,971] INFO in autoreload: Watching for file changes with StatReloader
+[2025-10-25 16:39:32,621] INFO in autoreload: /home/edsu-dev/Documents/dev/HNG/string_analyzer/analyzer/urls.py changed, reloading.
+[2025-10-25 16:39:33,261] INFO in autoreload: Watching for file changes with StatReloader
+[2025-10-25 16:39:34,747] INFO in autoreload: /home/edsu-dev/Documents/dev/HNG/string_analyzer/analyzer/urls.py changed, reloading.
+[2025-10-25 16:39:35,570] INFO in autoreload: Watching for file changes with StatReloader
+[2025-10-25 16:39:36,337] WARNING in log: Method Not Allowed: /strings
+[2025-10-25 16:43:22,807] INFO in autoreload: /home/edsu-dev/Documents/dev/HNG/string_analyzer/analyzer/views.py changed, reloading.
+[2025-10-25 16:43:23,540] INFO in autoreload: Watching for file changes with StatReloader
+[2025-10-25 16:43:24,830] INFO in autoreload: /home/edsu-dev/Documents/dev/HNG/string_analyzer/analyzer/views.py changed, reloading.
+[2025-10-25 16:43:26,180] INFO in autoreload: Watching for file changes with StatReloader
+[2025-10-25 16:43:29,856] INFO in autoreload: /home/edsu-dev/Documents/dev/HNG/string_analyzer/analyzer/views.py changed, reloading.
+[2025-10-25 16:43:30,553] INFO in autoreload: Watching for file changes with StatReloader
+[2025-10-25 16:44:03,396] INFO in autoreload: /home/edsu-dev/Documents/dev/HNG/string_analyzer/analyzer/views.py changed, reloading.
+[2025-10-25 16:44:04,192] INFO in autoreload: Watching for file changes with StatReloader
+[2025-10-25 16:44:07,624] INFO in autoreload: /home/edsu-dev/Documents/dev/HNG/string_analyzer/analyzer/views.py changed, reloading.
+[2025-10-25 16:44:08,365] INFO in autoreload: Watching for file changes with StatReloader
+[2025-10-25 16:44:16,899] INFO in autoreload: /home/edsu-dev/Documents/dev/HNG/string_analyzer/analyzer/views.py changed, reloading.
+[2025-10-25 16:44:17,580] INFO in autoreload: Watching for file changes with StatReloader
+[2025-10-25 16:44:19,975] INFO in autoreload: /home/edsu-dev/Documents/dev/HNG/string_analyzer/analyzer/views.py changed, reloading.
+[2025-10-25 16:44:20,647] INFO in autoreload: Watching for file changes with StatReloader
+[2025-10-25 16:44:30,102] INFO in autoreload: /home/edsu-dev/Documents/dev/HNG/string_analyzer/analyzer/views.py changed, reloading.
+[2025-10-25 16:44:30,781] INFO in autoreload: Watching for file changes with StatReloader
+[2025-10-25 16:44:35,499] INFO in autoreload: /home/edsu-dev/Documents/dev/HNG/string_analyzer/analyzer/views.py changed, reloading.
+[2025-10-25 16:44:36,306] INFO in autoreload: Watching for file changes with StatReloader
+[2025-10-25 16:44:38,744] INFO in autoreload: /home/edsu-dev/Documents/dev/HNG/string_analyzer/analyzer/views.py changed, reloading.
+[2025-10-25 16:44:39,488] INFO in autoreload: Watching for file changes with StatReloader
+[2025-10-25 16:44:42,850] INFO in autoreload: /home/edsu-dev/Documents/dev/HNG/string_analyzer/analyzer/views.py changed, reloading.
+[2025-10-25 16:44:43,549] INFO in autoreload: Watching for file changes with StatReloader
+[2025-10-25 16:44:47,062] INFO in autoreload: /home/edsu-dev/Documents/dev/HNG/string_analyzer/analyzer/views.py changed, reloading.
+[2025-10-25 16:44:47,783] INFO in autoreload: Watching for file changes with StatReloader
+[2025-10-25 16:44:55,521] INFO in autoreload: /home/edsu-dev/Documents/dev/HNG/string_analyzer/analyzer/views.py changed, reloading.
+[2025-10-25 16:44:56,405] INFO in autoreload: Watching for file changes with StatReloader
+[2025-10-25 16:45:30,081] INFO in autoreload: /home/edsu-dev/Documents/dev/HNG/string_analyzer/analyzer/views.py changed, reloading.
+[2025-10-25 16:45:31,134] INFO in autoreload: Watching for file changes with StatReloader
+[2025-10-25 16:45:37,748] INFO in autoreload: /home/edsu-dev/Documents/dev/HNG/string_analyzer/analyzer/views.py changed, reloading.
+[2025-10-25 16:45:38,665] INFO in autoreload: Watching for file changes with StatReloader
+[2025-10-25 16:45:40,113] INFO in autoreload: /home/edsu-dev/Documents/dev/HNG/string_analyzer/analyzer/views.py changed, reloading.
+[2025-10-25 16:45:40,753] INFO in autoreload: Watching for file changes with StatReloader
+[2025-10-25 16:45:51,373] INFO in autoreload: /home/edsu-dev/Documents/dev/HNG/string_analyzer/analyzer/views.py changed, reloading.
+[2025-10-25 16:45:52,244] INFO in autoreload: Watching for file changes with StatReloader
+[2025-10-25 16:46:05,944] INFO in autoreload: /home/edsu-dev/Documents/dev/HNG/string_analyzer/analyzer/urls.py changed, reloading.
+[2025-10-25 16:46:06,652] INFO in autoreload: Watching for file changes with StatReloader
+[2025-10-25 16:46:10,212] INFO in autoreload: /home/edsu-dev/Documents/dev/HNG/string_analyzer/analyzer/urls.py changed, reloading.
+[2025-10-25 16:46:10,980] INFO in autoreload: Watching for file changes with StatReloader
+[2025-10-25 16:46:37,078] WARNING in log: Not Found: /strings/m
+[2025-10-25 17:20:15,247] INFO in autoreload: /home/edsu-dev/Documents/dev/HNG/string_analyzer/analyzer/utils.py changed, reloading.
+[2025-10-25 17:20:16,156] INFO in autoreload: Watching for file changes with StatReloader
+[2025-10-25 17:20:47,171] INFO in autoreload: /home/edsu-dev/Documents/dev/HNG/string_analyzer/analyzer/utils.py changed, reloading.
+[2025-10-25 17:20:47,900] INFO in autoreload: Watching for file changes with StatReloader
+[2025-10-25 17:20:53,288] WARNING in log: Conflict: /strings
