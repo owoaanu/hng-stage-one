@@ -10,7 +10,7 @@ def describe_string(input_string: str) -> dict:
     length = len(input_string)
     is_palindrome = (normalized_string.lower() == normalized_string.lower()[::-1])
     # is_palindrome = (normalized_string == normalized_string[::-1])
-    unique_characters = len(set(input_string.lower()
+    unique_characters = len(set(input_string.lower()))
     word_count = len(input_string.split())
     char_frequency_map = generate_character_freq_map(input_string.lower())
     sha256_hash = hash_string(input_string.lower())
@@ -28,7 +28,7 @@ def hash_string(input_string: str) -> str:
     return hashlib.sha256(input_string.encode('utf-8')).hexdigest()
 
 def generate_character_freq_map(input_string: str) -> dict:
-    return dict(Counter(input_string)
+    return dict(Counter(input_string))
 
 
 class StringAnalyzer:
